@@ -6,4 +6,4 @@ document.addEventListener("DOMContentLoaded", function(){
 let main = document.getElementById("main")
 let btn1 = document.getElementById("btn1")
 
-bt1n.addEventListener('click', () => console.log('clicked'))
+btn1.addEventListener('click', () => console.log('clicked'))
