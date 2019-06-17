@@ -88,8 +88,8 @@ function init(){
     let radius = Math.random() * 3 + 1
     let x = Math.random() * (innerWidth - radius * 2) + radius;
     let y = Math.random() * (innerHeight - radius * 2) + radius;
-    let dx = (Math.random() - 0.5) * 7
-    let dy = (Math.random() - 0.5) * 7
+    let dx = (Math.random() - 0.5) * 4
+    let dy = (Math.random() - 0.5) * 4
 
     circleArr.push(new Circle(x, y, dx, dy, radius))
   }
@@ -108,7 +108,8 @@ function animate(){
   c.font = "16px Arial";
   c.textAlign = 'center'
   c.textBaseline = 'middle'
-  c.fillText("Hi world", innerWidth/2, innerHeight/2)
+  c.fillText("header", innerWidth/2, innerHeight/2)
+
 
 }
 

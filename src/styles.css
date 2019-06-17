@@ -1,19 +1,31 @@
 body {
   font-family: Rubik;
   margin: 0;
+  padding: 0;
 }
 
 canvas {
   background: linear-gradient(#87BCDE, 25%, #E1E2EF);
 }
 
-#navBtn {
+#landing button {
   position: absolute;
-  bottom: 20px;
+  bottom: 20%;
   left: 50%;
+  transform: translate(-50%,0)
 }
 
-#landing {
+#landing img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  height: 50%;
+  grid-area: img;
+}
+
+#intro {
   display: grid;
   grid-template-areas:
     ". . ."
@@ -27,16 +39,13 @@ canvas {
   justify-items: center;
 }
 
-#landing img {
-  border-radius: 50%;
-  height: 100%;
-  grid-area: img;
+#intro img {
+
 }
 
-#landing h4 {
+#intro h4 {
   grid-area: bio;
 }
-
 
 .centered {
   text-align: center;
@@ -44,8 +53,7 @@ canvas {
 
 .section {
   background: linear-gradient(#87BCDE, 25%, #E1E2EF);
-  margin: 10px;
-  border-radius: 10px;
+
 }
 
 .section p {
@@ -87,7 +95,14 @@ canvas {
   opacity: 1;
 }
 
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
 
+[aos="fade"].aos-animate {
+  opacity: 1;
+}]
 
 
 
