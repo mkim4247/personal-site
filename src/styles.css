@@ -1,0 +1,111 @@
+body {
+  font-family: Rubik;
+  margin: 0;
+}
+
+canvas {
+  background: linear-gradient(#87BCDE, 25%, #E1E2EF);
+}
+
+#navBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+
+#landing {
+  display: grid;
+  grid-template-areas:
+    ". . ."
+    ". img ."
+    ". bio ."
+    ". . .";
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 10% 50% 30% 10%;
+  height: 96vh;
+  align-items: center;
+  justify-items: center;
+}
+
+#landing img {
+  border-radius: 50%;
+  height: 100%;
+  grid-area: img;
+}
+
+#landing h4 {
+  grid-area: bio;
+}
+
+
+.centered {
+  text-align: center;
+}
+
+.section {
+  background: linear-gradient(#87BCDE, 25%, #E1E2EF);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.section p {
+  background-color: #87BCDE;
+}
+
+.project {
+  display: grid;
+  grid-template-areas:
+    "pic title"
+    "pic description";
+  grid-template-columns: 33% 66%;
+  justify-items: center;
+  align-items: center;
+}
+
+.project h4 {
+  grid-area: title;
+}
+
+.project img {
+  height: 100px;
+  width: 120px;
+  grid-area: pic;
+
+}
+
+.project p {
+  grid-area: description;
+}
+
+
+[aos="fade-up"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade-up"].aos-animate {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+/*
+dark sky blue
+#87BCDE
+
+silver pink
+#BFACAA
+
+rich black
+#02020A
+
+oxford blue
+#05204A
+
+azureish white
+#E1E2EF */

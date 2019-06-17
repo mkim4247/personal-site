@@ -3,22 +3,157 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title></title>
+
+
+
+    <!-- <meta content="I'm Gary Sheng" property="og:title">
+<meta content="http://www.garysheng.com/" property="og:url">
+<meta content="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/9621/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" property="og:image">
+<meta content="I'm Gary Sheng" property="og:site_name">
+<meta content="Google engineer / Duke and IMSA alumnus / Co-founder of Dancing Pineapple / Justice-seeking activist.&#x000A;&#x000A;Music, design, people &amp; technology are core to all my personal and professional ambitions." property="og:description">
+<meta content="I'm Gary Sheng" itemprop="name">
+<meta content="Google engineer / Duke and IMSA alumnus / Co-founder of Dancing Pineapple / Justice-seeking activist.&#x000A;&#x000A;Music, design, people &amp; technology are core to all my personal and professional ambitions." itemprop="description">
+<meta content="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/9621/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" itemprop="image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="I'm Gary Sheng" name="twitter:title">
+<meta content="Google engineer / Duke and IMSA alumnus / Co-founder of Dancing Pineapple / Justice-seeking activist.&#x000A;&#x000A;Music, design, people &amp; technology are core to all my personal and professional ambitions." name="twitter:description">
+<meta content="http://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/9621/Screen_Shot_2017-09-09_at_2.56.37_PM_g3qenv.png" name="twitter:image">
+<meta content="Google engineer / Duke and IMSA alumnus / Co-founder of Dancing Pineapple / Justice-seeking activist.&#x000A;&#x000A;Music, design, people &amp; technology are core to all my personal and professional ambitions." name="description"> -->
+
+
+
+
+
   </head>
   <body>
-    <nav>
-      <ol>
-        <li> Home </li>
-      </ol>
-    </nav>
+
+    <canvas></canvas>
+    <button id='navBtn'> Click me </button>
+
     <div id="main">
-      <h1>
-          Test
-      </h1>
-      <button id='btn1'>
-          click
-      </button>
+      <div id='landing'
+        class='centered section'
+        data-aos="fade-up"
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'>
+        <img src='./charlie.jpg' alt='Profile Picture'/>
+        <h4> Header </h4>
+      </div>
+
+      <div>
+
+      <div id='hero'
+      class='centered section'
+      data-aos="fade-up"
+      data-aos-duration='1000'
+      data-aos-easing='ease-in-out'>
+        hero/about section
+        <h2 class='centered'> header/about </h2>
+        <p
+        data-aos="fade-right"
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p data-aos="fade-right"
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id='about'
+      class='centered section'
+      class='centered section'
+      data-aos="fade-up"
+      data-aos-duration='1000'
+      data-aos-easing='ease-in-out'>
+        personal section
+        <h2 class='centered'> personal </h2>
+        <p data-aos="fade-right"
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p data-aos="fade-right"
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div id='projects'
+      class='section'
+      class='centered section'
+      data-aos="fade-up"
+      data-aos-duration='1000'
+      data-aos-easing='ease-in-out'>
+        projects section
+        <div class='project'>
+          check out some stuff
+        </div>
+
+        <div class='project'>
+          <h4>blackjack btb</h4>
+          <img src="./charlie.jpg" alt="filler">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+
+        <div class='project'>
+          <h4>on it</h4>
+          <img src="./charlie.jpg" alt="filler">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+
+        <div class='project'>
+          <h4>space base</h4>
+          <img src="./charlie.jpg" alt="filler">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id='joke-container'
+      class='centered section'
+      data-aos="fade-up"
+      data-aos-duration='1000'
+      data-aos-easing='ease-in-out'>
+
+        <button id='jokeBtn'>
+          knock knock
+        </button>
+        <div id='jokeDiv'>
+          joke div
+        </div>
+      </div>
+
+      <div id='contact'
+      class='section'
+      class='centered section'
+      data-aos="fade-up"
+      data-aos-duration='1000'
+      data-aos-easing='ease-in-out'>
+        <h4>Contact</h4>
+        <div>
+          email:
+        </div>
+        <div>
+          filler
+        </div>
+      </div>
+
     </div>
     <script src="src/index.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
   </body>
 </html>
