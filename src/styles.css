@@ -1,42 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: Rubik;
+  font-family: "Rubik";
   margin: 0;
   padding: 0;
+  /* background-color: #E1E2EF; */
 }
 
 canvas {
-  background: linear-gradient(#87BCDE, 25%, #E1E2EF);
+  background: linear-gradient(#87BCDE, 20%, #E1E2EF);
+  border-bottom: 10px solid #05204A;
+
 }
 
-#landing button {
+#landing h2 {
   position: absolute;
-  bottom: 20%;
+  bottom: 35%;
   left: 50%;
-  transform: translate(-50%,0)
+  transform: translate(-50%,0);
+  font-weight: bolder;
+  font-size: 400%;
+  height: 2vh;
+  text-shadow: 2px 2px 2px white;
+}
+
+#landing h2:hover {
+  color: #87BCDE;
+  text-shadow: 1px 1px 1px black;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+
+}
+
+#landing a {
+  background-color: #E1E2EF;
+  border-radius: 20%;
+  height: 64px;
+  width: 64px;
+  margin: 0 15px;
+  box-shadow: 1px 1px 1px white;
+}
+
+#contact-box {
+  display: flex;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%,0);
 }
 
 #landing img {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 0);
   border-radius: 50%;
-  height: 50%;
-  grid-area: img;
+  height: 40%;
+  box-shadow: 5px 5px 5px #02020A;
+  border: 2px solid black;
+}
+
+#landing img:hover{
+  opacity: 0.75;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+  border: 2px solid white;
+}
+
+#linkedin {
+  background-image: url('../icons/blackLinkedin64.png');
+  background-size: contain;
+}
+
+#linkedin:hover{
+  background-image: url('../icons/blueLinkedin64.png');
+  background-size: contain;
+}
+
+
+#github {
+  background-image: url('../icons/blackGithub64.png');
+  background-size: contain;
+}
+
+#github:hover {
+  background-image: url('../icons/blueGithub64.png');
+  background-size: contain;
+}
+
+#gmail {
+  background-image: url('../icons/blackGmail64.png');
+  background-size: contain;
+}
+
+#gmail:hover {
+  background-image: url('../icons/blueGmail64.png');
+  background-size: contain;
+}
+
+@media screen and (max-width: 700px) {
+  #landing h2 {
+    font-size: 300%;
+  }
+  #landing a {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  #landing h2 {
+    font-size: 250%;
+  }
+  #landing a {
+    height: 48px;
+    width: 48px;
+  }
 }
 
 #intro {
-  display: grid;
+  /* display: grid;
   grid-template-areas:
     ". . ."
     ". img ."
     ". bio ."
     ". . .";
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 10% 50% 30% 10%;
-  height: 96vh;
-  align-items: center;
-  justify-items: center;
+  grid-template-rows: 10% 50% 30% 10%; */
 }
 
 #intro img {
@@ -52,12 +147,13 @@ canvas {
 }
 
 .section {
-  background: linear-gradient(#87BCDE, 25%, #E1E2EF);
-
+  /* background-color: #E1E2EF; */
+  padding: 100px;
 }
 
 .section p {
-  background-color: #87BCDE;
+  background-color: white;
+  /* padding: 20px; */
 }
 
 .project {
@@ -85,6 +181,9 @@ canvas {
   grid-area: description;
 }
 
+#contact {
+  padding-bottom: 150px;
+}
 
 [aos="fade-up"] {
   opacity: 0;

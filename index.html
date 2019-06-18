@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="src/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:bold&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title></title>
 
@@ -29,41 +29,60 @@
 
   </head>
   <body>
-    <div id='landing'>
-      <canvas data-aos="fade-up"
-      data-aos-duration='1000'
-      data-aos-easing='ease-in-out'></canvas>
-      <img src='./charlie.jpg'
+    <div id='landing'
+    data-aos="fade-up"
+    data-aos-duration='500'
+    data-aos-easing='ease-in-out'>
+      <canvas></canvas>
+      <h2 id='nameHeader'>Mike Kim</h2>
+      <div id='contact-box'>
+
+        <a href="mailto:m.kim4247@gmail.com?Subject=Hey%20Mike!" target="_top"
+        class='landingBtn' id='gmail'>
+        </a>
+        <a
+        href='https://www.linkedin.com/in/mikekim4/'
+        target="_blank"
+        class='landingBtn' id='linkedin'>
+        </a>
+        <a
+        href='https://github.com/mkim4247'
+        target="_blank"
+        class='landingBtn' id='github'>
+        </a>
+
+
+
+
+      </div>
+      <img src='./charlie.jpg' id='charlie'
       alt='Profile Picture'/>
-      <button id='navBtn' data-aos="fade"
-      data-aos-duration='1000'
-      data-aos-easing='ease-in-out'> Click me </button>
     </div>
 
-      <div id='intro'
-        class='centered section'
-        data-aos="fade-up"
-        data-aos-duration='1000'
-        data-aos-easing='ease-in-out'>
-
-        <h4> Header </h4>
-      </div>
+    <div id='intro'
+      class='centered section'
+      data-aos="fade-up"
+      data-aos-duration='500'
+      data-aos-easing='ease-in-out'>
+      <h4> Header </h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
 
       <div id='hero'
       class='centered section'
       data-aos="fade-up"
-      data-aos-duration='1000'
+      data-aos-duration='500'
       data-aos-easing='ease-in-out'>
         hero/about section
         <h2 class='centered'> header/about </h2>
         <p
         data-aos="fade-right"
-        data-aos-duration='1000'
+        data-aos-duration='500'
         data-aos-easing='ease-in-out'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <p data-aos="fade-right"
-        data-aos-duration='1000'
+        data-aos-duration='500'
         data-aos-easing='ease-in-out'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -72,17 +91,17 @@
       <div id='about'
       class='centered section'
       data-aos="fade-up"
-      data-aos-duration='1000'
+      data-aos-duration='500'
       data-aos-easing='ease-in-out'>
         personal section
         <h2 class='centered'> personal </h2>
         <p data-aos="fade-right"
-        data-aos-duration='1000'
+        data-aos-duration='500'
         data-aos-easing='ease-in-out'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <p data-aos="fade-right"
-        data-aos-duration='1000'
+        data-aos-duration='500'
         data-aos-easing='ease-in-out'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -91,7 +110,7 @@
       <div id='projects'
       class='centered section'
       data-aos="fade-up"
-      data-aos-duration='1000'
+      data-aos-duration='500'
       data-aos-easing='ease-in-out'>
         projects section
         <div class='project'>
@@ -128,7 +147,7 @@
       <div id='joke-container'
       class='centered section'
       data-aos="fade-up"
-      data-aos-duration='1000'
+      data-aos-duration='500'
       data-aos-easing='ease-in-out'>
 
         <button id='jokeBtn'>
@@ -142,11 +161,25 @@
       <div id='contact'
       class='centered section'
       data-aos="fade-up"
-      data-aos-duration='1000'
+      data-aos-duration='500'
       data-aos-easing='ease-in-out'>
         <h4>Contact</h4>
         <div>
-          email:
+          <a href="mailto:m.kim4247@gmail.com?Subject=Hey%20Mike!" target="_top">
+            m.kim4247@gmail.com
+          </a>
+          <br/>
+          <a
+          href='https://github.com/mkim4247'
+          target="_blank">
+            github
+          </a>
+          <br/>
+          <a
+          href='https://www.linkedin.com/in/mikekim4/'
+          target="_blank">
+            linkedin
+          </a>
         </div>
         <div>
           filler
