@@ -160,10 +160,10 @@ function main(){
     }
   })
 
-  let landingHeader = document.getElementById('nameHeader')
+  let landingHeader = document.getElementById('landingHeader')
   landingHeader.addEventListener('click', function(){
-    let intro = document.getElementById('intro')
-    intro.scrollIntoView()
+    let nav = document.querySelector('nav')
+    nav.scrollIntoView()
   })
 
 
@@ -192,37 +192,3 @@ function main(){
   }
 
 }
-
-
-// function postJoke(joke) {
-//   let jokeDiv = document.createElement('div')
-//   jokeDiv.innerText = joke
-//   home.appendChild(jokeDiv)
-// }
-
-// window.addEventListener('scroll', () => {
-//   contact.classList.add('main')
-// })
-
-//
-// main.addEventListener("animationstart", listener, false);
-// main.addEventListener("animationend", listener, false);
-// main.addEventListener("animationiteration", listener, false);
-//
-// main.className = "main";
-//
-// function listener(event) {
-//   var l = document.createElement("li");
-//   switch(event.type) {
-//     case "animationstart":
-//       l.innerHTML = "Started: elapsed time is " + event.elapsedTime;
-//       break;
-//     case "animationend":
-//       l.innerHTML = "Ended: elapsed time is " + event.elapsedTime;
-//       break;
-//     case "animationiteration":
-//       l.innerHTML = "New loop started at time " + event.elapsedTime;
-//       break;
-//   }
-//   document.getElementById("main").appendChild(l);
-// }
