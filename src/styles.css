@@ -12,15 +12,56 @@ body {
   /* background-color: #E1E2EF; */
 }
 
+/* landing page styling */
+
 canvas {
-  background: linear-gradient(#87BCDE, 20%, #E1E2EF);
+  background: linear-gradient(#87BCDE, 5%, white);
 }
 
 #landing {
   background-color: #05204A;
 }
 
-#landing h2 {
+#charlie {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  height: 25vh;
+  box-shadow: 5px 5px 5px #02020A;
+}
+
+#charlie:hover{
+  border: 2px solid white;
+}
+
+#intro {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%,0);
+  text-shadow: 2px 2px 2px white;
+  color: #02020A;
+  text-align: center;
+}
+
+#intro div {
+  font-size: 100%;
+}
+
+/* #sub-intro {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  font-size: 80%;
+  transform: translate(-50%,0);
+  text-shadow: 2px 2px 2px white;
+  color: #02020A;
+  text-align: center;
+} */
+
+/* #landing h2 {
   position: absolute;
   bottom: 35%;
   left: 50%;
@@ -30,49 +71,42 @@ canvas {
   height: 2vh;
   text-shadow: 2px 2px 2px white;
   color: #02020A;
-}
+} */
 
+/* #landing h4 {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-weight: bolder;
+  font-size: 150%;
+  height: 2vh;
+  text-shadow: 2px 2px 2px white;
+  color: #02020A;
+} */
+/*
 #landing h2:hover {
   color: #87BCDE;
   text-shadow: 1px 1px 1px black;
   -webkit-transition: color 1s;
   transition: color 1s;
 
-}
-
-#landing a {
-  background-color: #E1E2EF;
-  border-radius: 20%;
-  height: 64px;
-  width: 64px;
-  margin: 0 15px;
-  box-shadow: 1px 1px 1px white;
-}
+} */
 
 #contact-box {
   display: flex;
   position: absolute;
-  bottom: 15%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-50%,0);
 }
 
-#landing img {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  border-radius: 50%;
-  height: 40%;
-  box-shadow: 5px 5px 5px #02020A;
-  border: 2px solid black;
-}
-
-#landing img:hover{
-  opacity: 0.75;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
-  border: 2px solid white;
+#contact-box a {
+  border-radius: 20%;
+  height: 32px;
+  width: 32px;
+  margin: 0 15px;
+  box-shadow: 1px 1px 1px white;
 }
 
 #linkedin {
@@ -84,7 +118,6 @@ canvas {
   background-image: url('../icons/blueLinkedin64.png');
   background-size: contain;
 }
-
 
 #github {
   background-image: url('../icons/blackGithub64.png');
@@ -106,36 +139,23 @@ canvas {
   background-size: contain;
 }
 
-@media screen and (max-width: 700px) {
-  #landing h2 {
-    font-size: 300%;
-  }
-  #landing a {
-    height: 48px;
-    width: 48px;
-  }
+#downArrowBtn {
+  background-image: url('../icons/blackDownArrow.png');
+  background-size: contain;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
 }
 
-@media screen and (max-width: 400px) {
-  #landing h2 {
-    font-size: 100%;
-  }
-  #landing a {
-    height: 48px;
-    width: 48px;
-  }
+#downArrowBtn:hover {
+  background-image: url('../icons/blueDownArrow.png');
 }
 
-@media screen and (max-height: 400px) {
-  #landing h2 {
-    font-size: 150%;
-  }
-  #landing a {
-    height: 32px;
-    width: 32px;
-  }
-}
-
+/* nav bar styling */
 
 nav {
   position: sticky;
@@ -151,21 +171,39 @@ nav a {
   text-decoration: none;
 }
 
+/* about page styling */
+
 #about {
-  background: linear-gradient(white, 80%, #E1E2EF);
-  height: 100vh;
+  /* background: linear-gradient(white, 80%, #E1E2EF); */
+  background-color: #E1E2EF;
+  font-size: 4vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
 }
 
 #about h1 {
   text-decoration: underline;
 }
 
-.column img {
-  height: 30%;
-  border-radius: 50%;
-  margin: 0 auto;
-  padding: 20px;
+
+#profile-pic{
+  height: 40vh;
+  border-radius: 5%;
+  box-shadow: 5px 5px 50px black;
+  padding: 1vh;
 }
+/*
+table {
+  margin: 0 auto;
+  padding-top: 2vh;
+
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  font-size: 0.9em;
+
+} */
 
 .row {
   display: flex;
@@ -179,11 +217,16 @@ nav a {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  margin: 20px;
 }
 
+.column img {
+  margin: 0 auto;
+  padding: 20px;
+}
 
-#hero {
-  background: linear-gradient(#E1E2EF, 20%, white);
+.column div {
+  text-align: right;
 }
 
 .centered {
@@ -191,24 +234,18 @@ nav a {
 }
 
 .section {
-  padding: 10vh 15vw;
-
 }
-
-.section p {
-}
-
 
 #projects {
-  height: 100vh;
+  padding: 20vh;
 }
 
 .project {
-  display: grid;
+  /* display: grid;
   grid-template-areas:
     "pic title"
     "pic description";
-  grid-template-columns: 33% 66%;
+  grid-template-columns: 33% 66%; */
   justify-items: center;
   align-items: center;
 }
@@ -228,7 +265,17 @@ nav a {
   grid-area: description;
 }
 
+#joke-container {
+  height: 100vh;
+  padding: 20vh;
+}
+
+#jokeDiv {
+
+}
+
 #contact {
+  height: 100vh;
   padding-bottom: 150px;
 }
 
@@ -252,6 +299,45 @@ nav a {
 
 
 
+@media screen and (max-width: 500px) {
+  #sub {
+    font-size: 10%;
+  }
+  #contact-box {
+    bottom: 15%;
+  }
+  #contact-box a {
+    height: 64px;
+    width: 64px;
+  }
+  #downArrowBtn{
+    height: 32px;
+    width: 32px;
+  }
+}
+
+@media screen and (max-height: 300px) {
+    #sub {
+      font-size: 10%;
+    }
+    #contact-box {
+      bottom: 15%;
+    }
+    #contact-box a {
+      height: 64px;
+      width: 64px;
+    }
+    #downArrowBtn{
+      height: 32px;
+      width: 32px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  canvas {
+    background-color: black;
+  }
+}
 
 
 

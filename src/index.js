@@ -81,7 +81,7 @@ function main(){
 
     drop = function(){
       if(this.y + this.radius + this.dy >= innerHeight){
-        this.dy = -this.dy * 0.9
+        this.dy = -this.dy * 0.75
       } else {
         this.dy += 1;
       }
@@ -96,7 +96,7 @@ function main(){
   function init(){
     circleArr = []
 
-    for(let i = 0; i < 400; i++){
+    for(let i = 0; i < 100; i++){
       let radius = Math.random() * 3 + 1
       let x = Math.random() * (innerWidth - radius * 2) + radius;
       let y = Math.random() * (innerHeight - radius * 2) + radius;
@@ -160,11 +160,15 @@ function main(){
     }
   })
 
-  let landingHeader = document.getElementById('landingHeader')
-  landingHeader.addEventListener('click', function(){
-    let nav = document.querySelector('nav')
-    nav.scrollIntoView()
+  let downArrowBtn = document.getElementById('downArrowBtn')
+  downArrowBtn.addEventListener('click', function(){
+    let about = document.getElementById('about')
+    about.scrollIntoView()
+    // let coords = about.getBoundingClientRect()
+    // window.scrollBy(coords.x, coords.y - 170)
+
   })
+
 
 
   ////////////////

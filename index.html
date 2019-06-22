@@ -2,9 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <link rel="stylesheet" href="src/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik:bold&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
 
@@ -29,52 +31,80 @@
 
   </head>
   <body>
-    <div id='landing' data-aos="fade" data-aos-duration='500' data-aos-easing='ease-in-out'>
+    <div id='landing' data-aos="fade" data-aos-duration='1500' data-aos-easing='ease-in-out'>
       <canvas></canvas>
-      <h2 id='landingHeader'>Mike Kim</h2>
-      <div id='contact-box'>
-        <a href="mailto:m.kim4247@gmail.com?Subject=Hey%20Mike!" target="_top" class='landingBtn' id='gmail'></a>
-        <a href='https://www.linkedin.com/in/mikekim4/' target="_blank" class='landingBtn' id='linkedin'></a>
-        <a href='https://github.com/mkim4247' target="_blank" class='landingBtn' id='github'></a>
-      </div>
       <img src='./charlie.jpg' id='charlie' alt='Profile Picture'/>
+      <div id='intro'>
+        <div id='sub'>
+          this is an intro here
+        </div>
+        <div>
+        sub intro information a bit longer filler text here
+        </div>
+        <div id='contact-box'>
+          <a href="mailto:m.kim4247@gmail.com?Subject=Hey%20Mike!" target="_top" class='landingBtn' id='gmail'></a>
+          <a href='https://www.linkedin.com/in/mikekim4/' target="_blank" class='landingBtn' id='linkedin'></a>
+          <a href='https://github.com/mkim4247' target="_blank" class='landingBtn' id='github'></a>
+        </div>
+      </div>
     </div>
+
+
+    <button id='downArrowBtn'></button>
 
     <nav>
-      <a href='#landing'> Home </a>
-      <a href='#about'> About </a>
-      <a href='#projects'> Projects </a>
-      <a href='#contact'> Contact </a>
+      <a href='#landing'> home </a>
+      <a href='#about'> about </a>
+      <a href='#projects'> projects </a>
+      <a href='#contact'> contact </a>
     </nav>
 
-    <div id='about' class='centered section' data-aos="fade-up" data-aos-duration='2000' data-aos-easing='ease-in-out'>
-      <h1> Header </h1>
-      <div> subheader extra stuff here for filler </div>
-
+    <div id='about' class='centered section' data-aos="fade" data-aos-duration='1000' data-aos-easing='ease-in-out'>
       <div class='row'>
+
         <div class='column'>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+
+          <img id='profile-pic' src='./charlie.jpg'/>
+
         </div>
+
         <div class='column'>
-          <img src='./charlie.jpg'/>
-        </div>
-        <div class='column'>
-          <div>
+          intro here text filler
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+          </p>
+
+          <!-- <p>
+            i'm a charismatic, highly motivated full stack developer, who's easy to work with and always down to grab a beer. i love tinkering with my code, finding efficient and intuitive solutions, and collaborating with others. along with coding, i'm really into rock climbing, science fiction novels, traveling, and trying new things!
+          </p> -->
         </div>
       </div>
-
     </div>
 
+    <!-- <p>
+       i graduated from the university of pittsburgh (hail to pitt!) and worked in an emergency room for several years before eventually finding my love for coding. i completed flatiron's software engineering program, where i leveled up my skills using html, css, sql, ruby, rails, javascript, react, and redux. i'm curious, eager, and ready to keep improving!
+    </p> -->
+                <!-- <div id='details'>
+                  <table>
+                    <tr>
+                      <td>name:</td>
+                      <td>mike kim</td>
+                    </tr>
+                    <tr>
+                      <td>education:</td>
+                      <td>university of pittsburgh<br/> (b.s. biology),<br/>flatiron school<br/> (software engineering program)</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>washington, dc</td>
+                    </tr>
+                  </table>
+
+                </div> -->
 
 
 
-
-
-      <div id='projects' class='centered section' data-aos="fade-up" data-aos-duration='2000' data-aos-easing='ease-in-out'>
+      <div id='projects' class='centered section' data-aos="fade-up" data-aos-duration='1000' data-aos-easing='ease-in-out'>
         projects section
         <div class='project'>
           check out some stuff
@@ -108,16 +138,18 @@
         </p>
       </div>
 
-      <div id='joke-container' class='centered section' data-aos="fade-up" data-aos-duration='2000' data-aos-easing='ease-in-out'>
+      <div id='joke-container' class='centered section' data-aos="fade-up" data-aos-duration='1000' data-aos-easing='ease-in-out'>
         <button id='jokeBtn'>
           knock knock
         </button>
+
         <div id='jokeDiv'>
-          joke div
+
         </div>
+
       </div>
 
-      <div id='contact' class='centered section' data-aos="fade-up" data-aos-duration='2000' data-aos-easing='ease-in-out'>
+      <div id='contact' class='centered section' data-aos="fade-up" data-aos-duration='1000' data-aos-easing='ease-in-out'>
         <h4>Contact</h4>
         <div>
           <a href="mailto:m.kim4247@gmail.com?Subject=Hey%20Mike!" target="_top">
