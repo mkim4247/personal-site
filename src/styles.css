@@ -6,99 +6,140 @@ html {
 }
 
 body {
-  font-family: "Rubik";
+  font-family: "Merriweather";
   margin: 0;
   padding: 0;
-  /* background-color: #E1E2EF; */
+  /* background: linear-gradient(white, 50%, #E1E2EF); */
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 
 /* landing page styling */
 
-canvas {
-  background: linear-gradient(#87BCDE, 5%, white);
-}
 
-#landing {
-  background-color: #05204A;
+#canvas {
+  border-top: 5px solid #05204A;
+  background: linear-gradient(#87BCDE, 1%, white);
+  height: 100vh;
 }
 
 #charlie {
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: 20px;
+  left: 20px;
+  height: 80px;
   border-radius: 50%;
-  height: 25vh;
-  box-shadow: 5px 5px 5px #02020A;
+  box-shadow: 3px 0px 30px #02020A;
+  /* transform: translate(-50%, 0); */
 }
 
-#charlie:hover{
-  border: 2px solid white;
-}
-
-#intro {
+.hero-greeting {
+  font-weight: bolder;
   position: absolute;
-  bottom: 40%;
-  left: 50%;
-  transform: translate(-50%,0);
+  top: 40%;
+  left: 10%;
+  font-size: 200%;
+  /* transform: translate(-50%,0); */
   text-shadow: 2px 2px 2px white;
   color: #02020A;
-  text-align: center;
 }
 
-#intro div {
-  font-size: 100%;
-}
-
-/* #sub-intro {
+.hero-description {
+  font-weight: bolder;
   position: absolute;
-  bottom: 20%;
-  left: 50%;
-  font-size: 80%;
-  transform: translate(-50%,0);
+  top: 50%;
+  left: 20%;
+  /* transform: translate(-50%,0); */
   text-shadow: 2px 2px 2px white;
   color: #02020A;
-  text-align: center;
+  padding-right: 5vw;
+}
+
+#downArrowBtn {
+  background-image: url('../icons/blackDownArrow.png');
+  background-size: contain;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%,0);
+}
+
+#downArrowBtn:hover {
+  background-image: url('../icons/blueDownArrow.png');
+}
+
+/* nav bar styling */
+
+/* nav {
+  position: sticky;
+  top: 0;
+  padding: 2vh;
+  background-color: #05204A;
+  z-index: 1;
+}
+
+nav a {
+  color: #E1E2EF;
+  padding-left: 1vw;
+  text-decoration: none;
 } */
 
-/* #landing h2 {
-  position: absolute;
-  bottom: 35%;
-  left: 50%;
-  transform: translate(-50%,0);
-  font-weight: bolder;
-  font-size: 400%;
-  height: 2vh;
-  text-shadow: 2px 2px 2px white;
-  color: #02020A;
-} */
+/* about page styling */
 
-/* #landing h4 {
-  position: absolute;
-  bottom: 25%;
-  left: 50%;
-  transform: translate(-50%,0);
-  font-weight: bolder;
+#about {
+  padding-bottom: 10vh;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.justified {
+  justify-content: center;
+}
+
+.banner {
+  padding-bottom: 5vh;
+}
+
+.fontsize150{
   font-size: 150%;
-  height: 2vh;
-  text-shadow: 2px 2px 2px white;
-  color: #02020A;
-} */
-/*
-#landing h2:hover {
-  color: #87BCDE;
-  text-shadow: 1px 1px 1px black;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+}
 
-} */
+#profile-pic {
+  height: 40vh;
+  border-radius: 50%;
+  box-shadow: 5px 5px 50px black;
+  margin-top: 3vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.about-description {
+  line-height: 2em;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.description-body {
+  border-left: 5px solid #05204A;
+  padding-left: 3vw;
+}
 
 #contact-box {
   display: flex;
-  position: absolute;
+  justify-content: center;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
+  /* position: absolute;
   bottom: 5%;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%,0); */
 }
 
 #contact-box a {
@@ -139,73 +180,21 @@ canvas {
   background-size: contain;
 }
 
-#downArrowBtn {
-  background-image: url('../icons/blackDownArrow.png');
-  background-size: contain;
-  height: 32px;
-  width: 32px;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  border: none;
-  background-color: transparent;
+.section {
+  margin: 10vh;
 }
 
-#downArrowBtn:hover {
-  background-image: url('../icons/blueDownArrow.png');
-}
-
-/* nav bar styling */
-
-nav {
-  position: sticky;
-  top: 0;
-  padding: 2vh;
-  background-color: #05204A;
-  z-index: 1;
-}
-
-nav a {
-  color: #E1E2EF;
-  padding-left: 1vw;
-  text-decoration: none;
-}
-
-/* about page styling */
-
-#about {
-  /* background: linear-gradient(white, 80%, #E1E2EF); */
-  background-color: #E1E2EF;
-  font-size: 4vh;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
-}
-
-#about h1 {
+.section-header {
+  margin-bottom: 5vh;
+  color: white;
+  text-shadow: 1px 0px 3px black;
   text-decoration: underline;
 }
 
-
-#profile-pic{
-  height: 40vh;
-  border-radius: 5%;
-  box-shadow: 5px 5px 50px black;
-  padding: 1vh;
+.centered {
+  text-align: center;
 }
-/*
-table {
-  margin: 0 auto;
-  padding-top: 2vh;
-
-}
-td {
-  padding: 10px;
-  border-bottom: 1px solid black;
-  font-size: 0.9em;
-
-} */
-
-.row {
+/* .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -220,49 +209,20 @@ td {
   margin: 20px;
 }
 
-.column img {
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.column div {
-  text-align: right;
-}
-
-.centered {
-  text-align: center;
-}
-
-.section {
-}
+*/
 
 #projects {
-  padding: 20vh;
+  /* background: linear-gradient(white, 50%, #E1E2EF) */
 }
 
 .project {
-  /* display: grid;
-  grid-template-areas:
-    "pic title"
-    "pic description";
-  grid-template-columns: 33% 66%; */
-  justify-items: center;
-  align-items: center;
-}
-
-.project h4 {
-  grid-area: title;
+  margin-right: 3vw;
+  margin-left: 3vw;
 }
 
 .project img {
   height: 100px;
   width: 120px;
-  grid-area: pic;
-
-}
-
-.project p {
-  grid-area: description;
 }
 
 #joke-container {
@@ -277,15 +237,7 @@ td {
 #contact {
   height: 100vh;
   padding-bottom: 150px;
-}
-
-[aos="fade-up"] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[aos="fade-up"].aos-animate {
-  opacity: 1;
+  background-color: #02020A;
 }
 
 [aos="fade"] {
@@ -296,7 +248,6 @@ td {
 [aos="fade"].aos-animate {
   opacity: 1;
 }]
-
 
 
 @media screen and (max-width: 500px) {
@@ -331,12 +282,6 @@ td {
       height: 32px;
       width: 32px;
     }
-}
-
-@media screen and (max-width: 500px) {
-  canvas {
-    background-color: black;
-  }
 }
 
 

@@ -16,7 +16,7 @@ function main(){
     y: null
   }
 
-  let maxRadius = 50;
+  let maxRadius = 30;
 
   let colors = [
     '#87BCDE',
@@ -68,7 +68,7 @@ function main(){
       this.y += this.dy;
 
       // interactivity   ->>> needs to prevent growing if outside window frame tho
-      if (mouse.x - this.x - this.dx < 50 && mouse.x - this.x - this.dx > -50 && mouse.y - this.y - this.dy < 50 && mouse.y - this.y - this.dy > -50){
+      if (mouse.x - this.x - this.dx < 30 && mouse.x - this.x - this.dx > -30 && mouse.y - this.y - this.dy < 30 && mouse.y - this.y - this.dy > -30){
         if(this.radius < maxRadius && (this.x + this.radius + this.dx < innerWidth) && (this.x - this.radius - this.dx > 0) && (this.y + this.radius + this.dy < innerHeight) && (this.y - this.radius -this.dy > 0)){
           this.radius += 1
         }
@@ -96,12 +96,12 @@ function main(){
   function init(){
     circleArr = []
 
-    for(let i = 0; i < 100; i++){
+    for(let i = 0; i < 50; i++){
       let radius = Math.random() * 3 + 1
       let x = Math.random() * (innerWidth - radius * 2) + radius;
       let y = Math.random() * (innerHeight - radius * 2) + radius;
-      let dx = (Math.random() - 0.5) * 4
-      let dy = (Math.random() - 0.5) * 4
+      let dx = (Math.random() - 0.5) * 2
+      let dy = (Math.random() - 0.5) * 2
 
       circleArr.push(new Circle(x, y, dx, dy, radius))
     }
@@ -149,6 +149,7 @@ function main(){
 
   let charlie = document.getElementById('charlie')
   charlie.addEventListener('click', function(){
+    console.log('click')
     cancelAnimationFrame(animation)
     if(mode){
       gravity()
@@ -170,10 +171,12 @@ function main(){
   })
 
 
+//////////
+let main = document.getElementById("main")
+
 
   ////////////////
 
-  let main = document.getElementById("main")
   let jokeDiv = document.getElementById("jokeDiv")
 
   let jokeBtn = document.getElementById("jokeBtn")
