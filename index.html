@@ -36,7 +36,7 @@
         <!-- <canvas></canvas> -->
         <div id='canvas'></div>
 
-        <img src='./charlie.jpg' id='charlie' alt='Profile Picture'/>
+        <img src='./images/charlie.jpg' id='charlie' alt='Profile Picture'/>
 
         <div class='hero-greeting'>
           Hey, my name's Mike!
@@ -45,60 +45,80 @@
           I'm a Software Engineer living in Washington, DC...
           <br/>
         </div>
+
+        <button id='downArrowBtn'></button>
+
       </div>
 
+      <div id='about' class='section' data-aos="fade" data-aos-duration='1000' data-aos-easing='ease-in-out'>
 
-    <button id='downArrowBtn'></button>
-
-    <!-- <nav>
-      <a href='#landing'> home </a>
-      <a href='#about'> about </a>
-      <a href='#projects'> projects </a>
-      <a href='#contact'> contact </a>
-    </nav> -->
-
-    <div id='about' class='section' data-aos="fade" data-aos-duration='1000' data-aos-easing='ease-in-out'>
-
-      <!-- <div class='section-header'>
-        about
-      </div> -->
-      <div class='flex-container justified banner'>
-        <img id='profile-pic' src='./profilepicture.png' alt='profile picture'/>
-      </div>
+        <div class='flex-container justified banner'>
+          <img id='profile-pic' src='./images/profilepicture.png' alt='profile picture'/>
+        </div>
 
         <div class='about-description' data-aos="fade" data-aos-duration='1000' data-aos-easing='ease-in-out'>
           <p class='centered fontsize150'>
             Hey, I'm Mike!
           </p>
           <div class='description-body'>
-          <p>
-            I'm a charismatic, highly motivated software engineer. I love finding the most efficient solution to problems and collaborating with others. I'm someone who's easy to work with and always down to grab a beer!
-          </p>
-          <p>
-            After graduating from the University of Pittsburgh (Hail to Pitt!), I worked in an emergency room for several years before eventually finding my love for coding. Looking to level up, I completed Flatiron School's Software Engineering Program, where I greatly improved my skills using HTML, CSS, SQL, Ruby, Rails, Javascript, React, and Redux. I hope to continue growing as a programmer, create innovative, fulfilling products, and find ways to give back to my community.
-          </p>
-          <p>
-            Beyond coding, I love rock climbing, science fiction novels, traveling, being physically active, and trying new things! If you'd like to build something great together or get to know me better, let's connect!
-          </p>
+            <p>
+              I'm a charismatic, highly motivated software engineer. I love finding the most efficient solution to problems and collaborating with others. I'm someone who's easy to work with and always down to grab a beer!
+            </p>
+            <p>
+              After graduating from the University of Pittsburgh (Hail to Pitt!), I worked in an emergency room for several years before eventually finding my love for coding. Looking to level up, I completed Flatiron School's Software Engineering Program, where I greatly improved my skills using HTML, CSS, SQL, Ruby, Rails, Javascript, React, and Redux. I hope to continue growing as a programmer, create innovative, fulfilling products, and find ways to give back to my community.
+            </p>
+            <p>
+              Beyond coding, I love rock climbing, science fiction novels, traveling, being physically active, and trying new things! If you'd like to build something great together or get to know me better, let's connect!
+            </p>
+          </div>
+        </div>
+
+        <div id='contact-box'>
+          <a href="mailto:m.kim4247@gmail.com?Subject=Hey%20Mike!" target="_top" class='landingBtn' id='gmail'></a>
+          <a href='https://www.linkedin.com/in/mikekim4/' target="_blank" class='landingBtn' id='linkedin'></a>
+          <a href='https://github.com/mkim4247' target="_blank" class='landingBtn' id='github'></a>
         </div>
       </div>
-      <div id='contact-box'>
-        <a href="mailto:m.kim4247@gmail.com?Subject=Hey%20Mike!" target="_top" class='landingBtn' id='gmail'></a>
-        <a href='https://www.linkedin.com/in/mikekim4/' target="_blank" class='landingBtn' id='linkedin'></a>
-        <a href='https://github.com/mkim4247' target="_blank" class='landingBtn' id='github'></a>
-      </div>
-  </div>
 
       <div id='projects' class='section' data-aos="fade" data-aos-duration='1000' data-aos-easing='ease-in-out'>
 
-        <div class='section-header fontsize150 centered'>
-          placeholder
+        <!-- margin getting thrown off from about-description class here-->
+        <div  data-aos="fade" data-aos-duration='1000' data-aos-easing='ease-in-out'>
+          <p class='centered fontsize150'>
+            My Personal Projects
+          </p>
+          <div class='centered'>
+            Here are some examples of my work:
+          </div>
+
+
+          <div class='flex-container justified banner'>
+            <img class='project-img' src="./images/BlackjackBtbScreenshot.png" alt="filler">
+          </div>
+          <div class='row'>
+            <div class='column'>
+          <div class='description-body project-info'>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            </div>
+          </div>
+          <div class='column'>
+          <div class='description-body project-info'>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
         </div>
+        </div>
+        </div>
+
         <div class='project'>
           <h4>filler</h4>
 
           <div class='flex-container'>
-            <img src="./BlackjackBtbScreenshot.png" alt="filler">
+            <img src="./images/OnItScreenshot.png" alt="filler">
+
           </div>
 
           <div class='project-info'>
@@ -115,25 +135,7 @@
           <h4>filler</h4>
 
           <div class='flex-container'>
-            <img src="./OnItScreenshot.png" alt="filler">
-
-          </div>
-
-          <div class='project-info'>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <h4>filler</h4>
-
-          <div class='flex-container'>
-            <img src="././SpaceBaseScreenshot.png" alt="filler">
+            <img src="./images/SpaceBaseScreenshot.png" alt="filler">
 
           </div>
 

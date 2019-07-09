@@ -27,7 +27,7 @@ body {
 #charlie {
   position: absolute;
   top: 20px;
-  left: 20px;
+  right: 20px;
   height: 80px;
   border-radius: 50%;
   box-shadow: 3px 0px 30px #02020A;
@@ -73,22 +73,6 @@ body {
   background-image: url('../icons/blueDownArrow.png');
 }
 
-/* nav bar styling */
-
-/* nav {
-  position: sticky;
-  top: 0;
-  padding: 2vh;
-  background-color: #05204A;
-  z-index: 1;
-}
-
-nav a {
-  color: #E1E2EF;
-  padding-left: 1vw;
-  text-decoration: none;
-} */
-
 /* about page styling */
 
 #about {
@@ -122,8 +106,8 @@ nav a {
 
 .about-description {
   line-height: 2em;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .description-body {
@@ -135,7 +119,6 @@ nav a {
   display: flex;
   justify-content: center;
   margin-top: 7vh;
-  margin-bottom: 10vh;
   /* position: absolute;
   bottom: 5%;
   left: 50%;
@@ -194,7 +177,8 @@ nav a {
 .centered {
   text-align: center;
 }
-/* .row {
+
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -209,7 +193,6 @@ nav a {
   margin: 20px;
 }
 
-*/
 
 #projects {
   /* background: linear-gradient(white, 50%, #E1E2EF) */
@@ -218,6 +201,11 @@ nav a {
 .project {
   margin-right: 3vw;
   margin-left: 3vw;
+}
+
+.project-img {
+  height: 100px;
+  width: 120px;
 }
 
 .project img {
